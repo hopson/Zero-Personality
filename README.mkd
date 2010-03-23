@@ -1,0 +1,26 @@
+# Zero Personality
+
+
+Zero Personality is a Firefox extension for disabling Personas, both
+installation and the auto-preview that happens when you roll over an image with
+the mouse.
+
+It is available from [addons.mozilla.org] [1]
+
+## Configuration
+
+No configuration options are currently available.
+
+## History
+
+When Firefox 3.6.2 was released, Mozilla decided to add Personas to the What's
+New page that every user gets to look at.  This is my overreaction.
+
+### 1.0
+
+Uploaded to AMO.
+
+[1]: https://addons.mozilla.org/en-US/firefox/addon/108864 "Zero Personality on AMO"
+
+
+<!-- vim:set syntax=mkd ts=4 sw=4 sts=4 expandtab: -->

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- vim:set ts=4 sw=4 sts=4 expandtab: -->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+
+        <em:id>zeropersonality@hopson.ws</em:id>
+        <em:name>Zero Personality</em:name>
+        <em:version>1.0</em:version>
+        <em:description>Disable Firefox Personas</em:description>
+        <em:creator>Robert Hopson</em:creator>
+        <em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.6</em:minVersion>
+                <em:maxVersion>3.6.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:homepageURL>http://hopson.ws/blog/</em:homepageURL>
+    </Description>
+</RDF>

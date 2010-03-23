@@ -1,0 +1,2 @@
+content zeropersonality jar:zeropersonality.jar!/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://zeropersonality/content/zeropersonality.xul

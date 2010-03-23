@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- vim:set ts=4 sw=4 sts=4 expandtab: -->
+<overlay id="zeropersonality"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript">
+    <![CDATA[ 
+        var observer = {
+            observe: function(subject, topic, data){
+                if(topic == "lightweight-theme-change-requested" || 
+                        topic == "lightweight-theme-preview-requested"){
+                        subject.QueryInterface(Ci.nsISupportsPRBool);
+                        subject.data = true;
+                }
+          }
+        }
+        let observerService = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
+
+        observerService.addObserver(observer, "lightweight-theme-change-requested", false);
+        observerService.addObserver(observer, "lightweight-theme-preview-requested", false);
+
+    ]]>
+    </script>
+</overlay>
+
