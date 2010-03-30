@@ -4,7 +4,12 @@
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
     <script type="application/x-javascript">
     <![CDATA[ 
-        var observer = {
+    if(!ws) var ws={};
+    if(!ws.hopson) ws.hopson={};
+    if(!ws.hopson.zeropersonality) ws.hopson.zeropersonality={};
+
+    ws.hopson.zeropersonality.init = function() {
+        var Observer = {
             observe: function(subject, topic, data){
                 if(topic == "lightweight-theme-change-requested" || 
                         topic == "lightweight-theme-preview-requested"){
@@ -13,12 +18,11 @@
                 }
           }
         }
-        let observerService = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
-
-        observerService.addObserver(observer, "lightweight-theme-change-requested", false);
-        observerService.addObserver(observer, "lightweight-theme-preview-requested", false);
-
+        var ObserverService = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
+        ObserverService.addObserver(Observer, "lightweight-theme-change-requested", false);
+        ObserverService.addObserver(Observer, "lightweight-theme-preview-requested", false);
+    }
+    ws.hopson.zeropersonality.init();
     ]]>
     </script>
 </overlay>
-
