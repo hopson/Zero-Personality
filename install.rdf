@@ -6,7 +6,7 @@
 
         <em:id>zeropersonality@hopson.ws</em:id>
         <em:name>Zero Personality</em:name>
-        <em:version>1.0</em:version>
+        <em:version>1.0.1</em:version>
         <em:description>Disable Firefox Personas</em:description>
         <em:creator>Robert Hopson</em:creator>
         <em:targetApplication>
