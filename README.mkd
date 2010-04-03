@@ -16,6 +16,10 @@ No configuration options are currently available.
 When Firefox 3.6.2 was released, Mozilla decided to add Personas to the What's
 New page that every user gets to look at.  This is my overreaction.
 
+### 1.0.1
+
+Added namespacing per AMO feedback.
+
 ### 1.0
 
 Uploaded to AMO.
