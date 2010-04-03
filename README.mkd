@@ -18,7 +18,7 @@ New page that every user gets to look at.  This is my overreaction.
 
 ### 1.0.1
 
-Added namespacing per AMO feedback.
+Added namespacing per AMO feedback.  Back in the queue!
 
 ### 1.0
 
